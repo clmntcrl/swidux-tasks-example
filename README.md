@@ -1,6 +1,6 @@
 # SwiduxTasksExample
 
-A light task manager example that use [Swidux](https://github.com/clmntcrl/swidux)
+A light task manager example that use [Swidux](https://github.com/clmntcrl/swidux), [SwiduxRouter](https://github.com/clmntcrl/swidux-router) and [SwiduxEcho](https://github.com/clmntcrl/swidux-echo)
 
 ## Getting Started
 
