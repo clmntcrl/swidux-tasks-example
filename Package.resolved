@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Swidux",
+        "repositoryURL": "https://github.com/clmntcrl/swidux.git",
+        "state": {
+          "branch": null,
+          "revision": "3558c31dc50869ac2c1aba88240438c9e26f35d0",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "SwiduxEcho",
+        "repositoryURL": "https://github.com/clmntcrl/swidux-echo.git",
+        "state": {
+          "branch": null,
+          "revision": "bd3441c4bee94ec70702ff69ce7769d32f908b69",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "SwiduxRouter",
+        "repositoryURL": "https://github.com/clmntcrl/swidux-router.git",
+        "state": {
+          "branch": null,
+          "revision": "aa0bd69e08e3806a8d69533807d26c65f841edcd",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
