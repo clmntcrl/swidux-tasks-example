@@ -6,7 +6,7 @@ import SwiduxRouter
 
 public final class TaskTableViewController: TableViewController, ParametricRoutable {
 
-    public var params: Parent<Id<Task>>! = .root
+    public var routeParam: Parent<Id<Task>>! = .root
     private var taskSubscriptionToken: Any!
 
     public override func viewDidLoad() {
@@ -23,13 +23,13 @@ public final class TaskTableViewController: TableViewController, ParametricRouta
         taskSubscriptionToken = store.subscribe(\AppState.task) { [weak self] state in
             DispatchQueue.main.async { self.flatMap {
                 // Set view controller title
-                if case .parent(let id)? = $0.params {
+                if case .parent(let id)? = $0.routeParam {
                     $0.title = state.getTask(with: id).title
                 } else {
                     $0.title = "Tasks"
                 }
                 // Build rows and update data source
-                $0.rows = state.getChildrenTasks(with: $0.params).map { task in
+                $0.rows = state.getChildrenTasks(with: $0.routeParam).map { task in
                     TaskTableRow(task: task, taskHasChildren: state.hasChidren(forTaskWith: .parent(task.id)))
                 }
                 $0.tableView.reloadData()
@@ -40,10 +40,10 @@ public final class TaskTableViewController: TableViewController, ParametricRouta
     // MARK: Toolbar items actions
 
     @objc private func completeAll() {
-        store.dispatch(TaskAction.completeAllTasks(parentId: params))
+        store.dispatch(TaskAction.completeAllTasks(parentId: routeParam))
     }
 
     @objc private func sort() {
-        store.dispatch(TaskAction.sortTasksByTitle(parentId: params))
+        store.dispatch(TaskAction.sortTasksByTitle(parentId: routeParam))
     }
 }
