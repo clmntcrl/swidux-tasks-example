@@ -10,4 +10,7 @@
    <FileRef
       location = "group:SwiduxTasksExample.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Tasks.xcodeproj">
+   </FileRef>
 </Workspace>
