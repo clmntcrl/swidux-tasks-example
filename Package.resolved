@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/clmntcrl/swidux.git",
         "state": {
           "branch": null,
-          "revision": "3558c31dc50869ac2c1aba88240438c9e26f35d0",
-          "version": "0.1.0"
+          "revision": "5a7720d8de7b8f95ffdf90b5c0143c61ff1db605",
+          "version": "0.1.1"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/clmntcrl/swidux-echo.git",
         "state": {
           "branch": null,
-          "revision": "bd3441c4bee94ec70702ff69ce7769d32f908b69",
-          "version": "0.1.0"
+          "revision": "f2091079c01e39f584a6cf8c527bb28ded58f9cf",
+          "version": "0.1.1"
         }
       },
       {

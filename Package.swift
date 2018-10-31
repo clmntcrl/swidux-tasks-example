@@ -10,8 +10,8 @@ let package = Package(
             targets: ["SwiduxTasksExample"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/clmntcrl/swidux.git", from: "0.1.0"),
-        .package(url: "https://github.com/clmntcrl/swidux-echo.git", from: "0.1.0"),
+        .package(url: "https://github.com/clmntcrl/swidux.git", from: "0.1.1"),
+        .package(url: "https://github.com/clmntcrl/swidux-echo.git", from: "0.1.1"),
         .package(url: "https://github.com/clmntcrl/swidux-router.git", from: "0.1.1"),
     ],
     targets: [
