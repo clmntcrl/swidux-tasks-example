@@ -4,7 +4,7 @@
 import Foundation
 import SwiduxRouter
 
-public enum AppRoute {
+public extension Route {
 
     public static func tasks(withParentTaskId parent: Parent<Id<Task>>) -> Route {
         return  Route(type: TaskTableViewController.self, routeParam: parent)

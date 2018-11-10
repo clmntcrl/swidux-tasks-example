@@ -30,6 +30,6 @@ extension TaskTableRow: TableRow {
     }
 
     func tapAccessoryButton(on tableViewController: UIViewController) {
-        store.dispatch(RouteAction.push(route: AppRoute.tasks(withParentTaskId: .parent(task.id))))
+        store.dispatch(RouteAction.push(route: .tasks(withParentTaskId: .parent(task.id))))
     }
 }

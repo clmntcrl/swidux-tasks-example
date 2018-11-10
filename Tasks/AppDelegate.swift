@@ -15,12 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+
         window.rootViewController =  Router(
             store: store,
-            keyPath: \.routes,
-            initialRoute: AppRoute.tasks(withParentTaskId: .root)
+            keyPath: \.routes
         )
         window.makeKeyAndVisible()
+
         return true
     }
 }

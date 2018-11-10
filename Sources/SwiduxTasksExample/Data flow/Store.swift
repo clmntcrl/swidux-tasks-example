@@ -8,7 +8,7 @@ import SwiduxEcho
 
 public struct AppState {
 
-    public var routes = [Route]()
+    public var routes = [Route.tasks(withParentTaskId: .root)]
     public var task = TaskState.mockedState
 }
 
