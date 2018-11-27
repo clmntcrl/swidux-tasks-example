@@ -8,14 +8,14 @@ import SwiduxEcho
 
 public struct AppState {
 
-    public var routes = [Route.tasks(withParentTaskId: .root)]
+    public var root = RootDescriptor(initialRoute: .tasks(withParentTaskId: .root))
     public var task = TaskState.mockedState
 }
 
 public let store = Store(
     initialState: AppState(),
     reducer: .combine(reducers: [
-        routeReducer.lift(\.routes),
+        routeReducer.lift(\.root),
         taskReducer.lift(\.task),
     ]),
     middlewares: [

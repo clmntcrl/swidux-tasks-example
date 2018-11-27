@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window.rootViewController =  Router(
             store: store,
-            keyPath: \.routes
+            keyPath: \.root
         )
         window.makeKeyAndVisible()
 

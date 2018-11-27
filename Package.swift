@@ -12,7 +12,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/clmntcrl/swidux.git", from: "0.1.1"),
         .package(url: "https://github.com/clmntcrl/swidux-echo.git", from: "0.1.1"),
-        .package(url: "https://github.com/clmntcrl/swidux-router.git", from: "0.1.2"),
+        .package(url: "https://github.com/clmntcrl/swidux-router.git", from: "0.1.3"),
     ],
     targets: [
         .target(
