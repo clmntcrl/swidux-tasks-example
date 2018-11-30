@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/clmntcrl/swidux-router.git",
         "state": {
           "branch": null,
-          "revision": "2fe9a52e18c657a13e2e619b7705884ea6a83b53",
-          "version": "0.1.4"
+          "revision": "ce834d9b1d71c9bab32dfc117329f83a1a5aeb4c",
+          "version": "0.1.5"
         }
       }
     ]
